@@ -1,0 +1,29 @@
+Routing in Express.js is the process of mapping incoming HTTP requests (defined by method and URL) to specific handler functions. It enables developers to configure endpoints for various paths and operations, such as rendering views, processing form data, or performing CRUD actions on resources.
+
+Syntax:
+
+app.METHOD(PATH, HANDLER);
+In the above syntax:
+
+app: Represents an instance of an Express application.
+METHOD: Represents an HTTP method like GET, POST, PUT, DELETE.
+PATH: Defines the endpoint (route) where the request will be handled.
+HANDLER: A function that executes when the route is accessed.
+How Routing Work in ExpressJS?
+Routing in Express.js follows a simple flow to handle client requests:
+
+HTTP Request: Shows the incoming request with method and path (e.g., GET /users).
+Route Matching: Lists all defined routes and shows which route matches the request (green check) and which don’t (red cross).
+Handler Execution: Indicates that the matching route’s handler function is executed (req, res).
+Sending Response: Shows how the server sends a response back to the client using methods like res.send(), res.json(), or res.render().
+
+Where to Use Express.JS?
+Express.js is a popular web framework for Node.js that simplifies server-side development. It is widely used to build web applications, APIs, and scalable server-side solutions.
+
+Web Applications: Express.js is ideal for building dynamic websites and single-page applications (SPAs) that require fast and efficient server-side handling.
+RESTful APIs: It’s widely used to create APIs that handle CRUD operations, serving data to front-end applications or mobile apps.
+Middleware-based Applications: Express allows integration of middleware for logging, authentication, input validation, and other request processing tasks.
+Microservices: Its lightweight and modular design makes it suitable for developing microservices in a scalable architecture.
+Server-side Rendering: Works seamlessly with template engines like EJS, Pug, or Handlebars to render HTML pages on the server.
+Proxy and Gateway Servers: Can act as a proxy or gateway, routing requests to different services and managing HTTP traffic efficiently.
+Rapid Prototyping: Developers often use Express for quickly setting up server-side logic and testing ideas before scaling applications.
