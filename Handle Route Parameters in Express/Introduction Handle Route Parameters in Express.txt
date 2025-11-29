@@ -1,0 +1,13 @@
+Route parameters in Express.js are dynamic URL segments defined with a colon (:) and accessed via req.params, enabling efficient handling of variable data such as IDs in RESTful routes.
+
+Syntax:
+
+app.get('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  res.send(`User ID is: ${userId}`);
+});
+In the above syntax:
+
+:id: defines the route parameter.
+req.params.id: retrieves the value from the URL.
+Here are the different ways to handle route parameters in Express.js include basic, optional, and multiple parameters.
