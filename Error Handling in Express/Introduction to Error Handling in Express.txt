@@ -1,0 +1,17 @@
+Error Handling in Express
+Last Updated : 19 Sep, 2025
+Error handling in Express refers to the process of managing errors that occur during the execution of a request. When an error occurs in a route or middleware, Express provides mechanisms to catch these errors and prevent the application from crashing. Error-handling middleware allows developers to:
+
+Log errors for debugging.
+Send structured error responses to users.
+Maintain application stability even when issues arise.
+Good error handling makes an application more reliable and user-friendly, improving both developer efficiency and the user experience.
+
+How Error Handling Works
+Express ensures errors are caught and managed effectively to prevent application crashes.
+
+Error Detection: Automatically detects issues, such as bad requests or server failures.
+Error-Handling Middleware: Uses special middleware to catch and process errors in a structured way.
+Passing Errors: Errors in routes are passed to the middleware using next(err).
+Logging: Errors are logged to help developers quickly identify and resolve issues.
+User-Friendly Responses: Express sends clear, non-technical messages to users instead of showing stack traces.
