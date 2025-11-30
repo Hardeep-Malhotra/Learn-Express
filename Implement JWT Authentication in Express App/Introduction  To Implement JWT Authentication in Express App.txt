@@ -1,0 +1,30 @@
+JWT authentication in an Express app involves issuing a token when a user logs in and verifying that token on protected routes. This ensures only authenticated users can access certain resources.
+
+Implementation of JWT
+We can implement JWT authentication in the Express app by following the below steps:
+
+Step 1: Initialize the server & Install JWT Package.
+npm init
+npm install jsonwebtoken
+Step 2: Create Route for Tokens
+We've brought in essential libraries - express, mongoose, and JSON web token, including the User model for database interaction. Creating an Express app express() allows server configuration.
+Using express.json() initially helps recognize incoming requests as JSON. Two routes are set up for login and signup.
+In the login route, we extract the email and password from the request body, searching for the user in the database. If found, we verify the provided password.
+For signup, we extract user details (name, email, password) and use the Mongoose save method to register users in the database.
+Finally, we have created a token with a 1-hour expiry by providing payload as user id and email because only this is sufficient to extract the user information.  The sign method accepts payload, secret jwt key, and expiry time, then generates a token.
+
+We are testing our API with the Postman, we have provided the data for signup in the request body, and finally, got our token with some other details.
+
+Step 3: Decoding JWT Token
+We can receive our request with a token to grant the permissions, here we are showing a simple example of how a token is being decoded.
+The token is being sent by request header, we are extracting the token here from the authorization header we are using the split function because the token remains in the form of "Bearer Token," and we only want to extract the token, that's why providing the one index.
+The verify method accepts the token and jwt key and provides the decode of the token. After this, we can get the information of the user.
+
+
+Here, we are testing the API which is responsible for accepting the token, we have passed the token in the header and finally, the server is successful in decoding the user details.
+
+Why do we need JWT in the authentication?
+JSON Web Tokens (JWTs) are essential in authentication for securely transmitting user identity and permissions in a stateless manner.
+
+They enable servers to verify and grant access without storing session data, enhancing scalability and efficiency.
+JWTs facilitate seamless user authentication across multiple requests by embedding necessary information within the token.
