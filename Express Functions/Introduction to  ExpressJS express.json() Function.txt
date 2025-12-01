@@ -1,0 +1,23 @@
+ExpressJS express.json() Function
+The express.json() is a built-in middleware in Express. It helps your app read JSON data sent from the client (like in POST or PUT requests) and makes it available in req.body. Without it, Express cannot understand JSON data in requests.
+
+Use Cases:
+
+APIs: Parse JSON data in RESTful APIs.
+POST Requests: Handle form or client data in JSON format.
+Complex Data: Easily manage structured JSON data.
+Syntax:
+
+ExpressJSon( [options] )
+In the above syntax:
+
+Parameters: The options parameter has various properties like inflate, limit, type, etc.
+Return Value: It returns an Object. 
+How express.json() Works?
+Middleware Function: express.json() is a built-in middleware in Express.
+Reads Request Body: It looks at the body of incoming HTTP requests.
+Parses JSON Data: If the body contains JSON, it converts it into a JavaScript object.
+Stores in req.body: The parsed object is placed inside req.body.
+Easier Access: You can directly use req.body in your routes to access the client’s data.
+
+

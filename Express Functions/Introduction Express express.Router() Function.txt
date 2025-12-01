@@ -1,0 +1,24 @@
+Express express.Router() Function
+The express.Router() function in Express.js creates a new router object that can handle requests in a modular and organized way. It serves as a mini-application with middleware and routes but is limited to specific segments of your application.
+
+By using express.Router(), you can organize your Express app's routing logic, allowing you to define specific routes and middleware for different parts of your application, such as users, products, or orders, in a more maintainable way.
+
+Syntax:
+
+express.Router( [options] )
+Optional Parameters:
+
+case-sensitive: This enables case sensitivity.
+mergeParams: It preserves the req.params values from the parent router.
+strict: This enables strict routing.
+Return Value: This function returns the New Router Object. 
+
+The express.Router() function is essential for organizing your routes in large applications.
+
+Why Use express.Router()?
+As your Express application grows, maintaining all routes in a single file can become unmanageable. express.Router() provides a way to organize related routes together and apply middleware to them efficiently. Here’s why you might consider using it:
+
+Modularity: Group routes based on features or functionality.
+Scalability: Organize routes for large applications and separate them into different modules.
+Middleware Management: Apply middleware to specific routes or groups of routes easily.
+Cleaner Code: By dividing routes into smaller, focused files, your codebase remains clean and readable.

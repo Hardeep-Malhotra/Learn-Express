@@ -1,0 +1,10 @@
+Express.js express.raw() Function
+
+The express.raw() function is a built-in middleware function in Express. It parses incoming request payloads into a Buffer and is based on body-parser. 
+
+Syntax:
+
+express.raw( [options] )
+Parameter: The options parameter contains various properties like inflate, limit, type, etc. 
+
+Return Value: It returns an Object. 

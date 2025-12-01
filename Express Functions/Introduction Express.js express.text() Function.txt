@@ -1,0 +1,44 @@
+Express.js express.text() Function
+The express.text() function is a built-in middleware in Express.js that parses incoming HTTP request bodies with a text/plain content type. It allows you to easily handle raw text data sent in the body of a request, making it suitable for handling non-JSON, non-URL-encoded, or non-multipart data.
+
+The middleware parses the request body and makes it available in req.body, allowing you to access and work with the text data easily.
+
+Syntax
+
+express.text([options])]
+Parameter: The options parameter contains various properties like defaultCharset, inflate, limit, verify, etc.
+
+defaultCharset: Specifies the default character encoding (default: utf-8)
+inflate: Allows handling of compressed request bodies
+limit: Defines the maximum size of the text payload
+verify: Custom function to validate request body before parsing
+Return Value: Returns an Object containing the parsed text data.
+
+As soon as you send the text on to the server server will respond with the same text message to you after parsing it.
+
+How Does express.text() Work?
+When you set up express.text() as middleware in your Express app, it processes requests where the Content-Type header is set to text/plain. The middleware reads the body of the request and transforms it into a plain text string, which can then be accessed via req.body.
+
+The client sends an HTTP request with a Content-Type of text/plain.
+The request body is passed to the express.text() middleware.
+The middleware processes the body and adds the text content to req.body.
+You can access the plain text data directly from req.body in your route handler.
+The Size limit parameter present in options
+To prevent large requests from overloading the server, you can set a size limit for text payloads using the limit option
+
+app.use(express.text({ limit: "100b" })); ensures that incoming text data does not exceed 100 bytes, preventing large payloads.
+When a POST request is made to /, the server logs the received text (req.body) and sends a response confirming the received data
+app.listen(PORT, ...) runs the server and logs a message indicating it is running on port 3000
+If the text payload exceeds 100 bytes, the server returns a 413 Payload Too Large error.
+
+
+
+Common Use cases of express.text() middleware
+Handling Chat Messages: Used in chat applications where messages are sent as plain text instead of JSON
+Processing Webhooks: Some external services send webhook data as plain text, which express.text() helps parse
+Logging and Monitoring: Collects log messages or status updates from clients and stores them for analysis
+Text-Based APIs: Useful in APIs where requests contain plain text input, such as search queries or commands
+Handling File Metadata: Some file upload services send metadata as plain text, which can be parsed using express.text()
+Conclusion
+The express.text() middleware in Express.js is essential for handling plain text requests by converting them into a string accessible via req.body. It is useful in scenarios like chat applications, webhook processing, logging, and APIs that require text-based input. By using express.text(), developers can efficiently process text data, improve request handling, and ensure structured text parsing in their applications
+

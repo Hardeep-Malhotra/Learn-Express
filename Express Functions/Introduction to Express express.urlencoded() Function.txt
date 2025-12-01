@@ -1,0 +1,34 @@
+Express express.urlencoded() Function
+The express.urlencoded() middleware in Express.js is used to parse URL-encoded form data, making it accessible as a JavaScript object in req.body. It's essential for handling form submissions in application/x-www-form-urlencoded format.
+
+Syntax
+
+app.use(
+    express.urlencoded({
+        extended: true,
+        inflate: true,
+        limit: "1mb",
+        parameterLimit: 5000,
+        type: "application/x-www-form-urlencoded",
+    })
+);
+extended: true : Allows parsing of nested objects and arrays using the qs library.
+inflate: true: Automatically decompresses gzip/deflate request bodies before parsing.
+limit: '1mb': Restricts the maximum size of the request body to 1MB for security.
+parameterLimit: 5000: Limits the number of form fields to 5000 to prevent DoS attacks.
+type: 'application/x-www-form-urlencoded': Only parses requests with this MIME type.
+How express.urlencoded Works?
+The express.urlencoded() middleware processes URL-encoded form data, converts it into a JavaScript object, and makes it available via req.body.
+
+First it processes form data sent via POST requests with application/x-www-form-urlencoded encoding.
+Then it converts the incoming data into a JavaScript object and makes it accessible through req.body.
+When { extended: true } is set, it supports nested objects and arrays using the qs library.
+It includes security options like limit to restrict body size and parameterLimit to prevent excessive form fields.
+It only parses requests with Content-Type: application/x-www-form-urlencoded, ignoring other data formats.
+
+Use cases of express.urlencoded
+Handling User Authentication Forms: Used to process login and signup forms, where users submit credentials like username and password via a POST request.
+Processing Contact or Feedback Forms: When users submit a contact form on a website, express.urlencoded() parses the form data (e.g., name, email, message) and makes it accessible in req.body.
+Submitting Order Forms in E-commerce Apps: When a customer fills out an order form, the middleware extracts details like product name, quantity, and address for order processing.
+Storing Survey or Questionnaire Responses: Used to collect and store survey responses, where users submit multiple-choice or text responses through a form.
+Handling Profile Update Forms: In user dashboards, when users update their name, bio, or preferences via a form, express.urlencoded() ensures the server correctly processes the updated data.
