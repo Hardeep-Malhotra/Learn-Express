@@ -1,0 +1,17 @@
+In Express.js, app.locals is an object used to store variables that need to be available throughout the app. These variables can be accessed globally across different routes or middleware and are often used for configuration settings or values that should be shared
+
+What is app.locals?
+app.locals is an object that holds local variables which are accessible throughout the entire Express application. These variables are typically used to store global settings such as application configurations, shared data, or values that need to be passed to views and templates. They are stored as key-value pairs and are available to all routes and middleware.
+
+Syntax
+
+app.locals
+No parameters are needed to access the app.locals object.
+It returns an object containing all the local variables for the application.
+
+Benefits of Using app.locals
+Global Availability: Values stored in app.locals are available throughout the application, which helps reduce the need to repeatedly pass variables between routes or middleware
+Centralized Configuration: app.locals is ideal for storing application-level settings like environment configurations, application-specific data, or frequently used values
+Ease of Use: It simplifies the management of shared variables across different parts of your application, making your code more maintainable
+Conclusion
+The app.locals object in Express.js is a powerful feature for managing global variables and application configurations. By storing values centrally in app.locals, developers can easily access and manage data across different parts of the application, improving code readability and reducing redundancy

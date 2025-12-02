@@ -1,0 +1,21 @@
+Express.js | app.METHOD() Function
+
+
+
+The app.METHOD() function is used to route an HTTP request, where METHOD is the HTTP method of the request, such as GET, PUT, POST, and so on, in lowercase. Thus, the actual methods are app.get(), app.post(), app.put(), and so on. 
+
+Syntax:
+
+app.METHOD(path, callback [, callback ...])
+Parameters:
+
+Path: The path for which the middleware function is invoked and can be any of:
+A string represents a path.
+A path pattern.
+A regular expression pattern to match paths.
+An array of combinations of any of the above.
+Callback: Callback functions can be:
+A middleware function.
+A series of middleware functions (separated by commas).
+An array of middleware functions.
+A combination of all of the above.

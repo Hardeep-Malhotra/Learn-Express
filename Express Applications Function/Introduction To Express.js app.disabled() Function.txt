@@ -1,0 +1,7 @@
+// Express.js | app.disabled() Function
+
+// The app.disabled() function is used to return the bool values of the setting name. It returns true if the setting name is disabled and returns false if the setting name is not disabled. 
+
+// Syntax:
+
+// app.disabled(name)Ds

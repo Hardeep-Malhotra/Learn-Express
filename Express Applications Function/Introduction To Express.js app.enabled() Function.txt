@@ -1,0 +1,9 @@
+Express.js app.enabled() Function
+
+
+
+The app.enabled() function is used to return the bool values of the setting name. It returns true if the setting name is enabled and returns false if the setting name is not enabled. 
+
+Syntax:
+
+app.enabled(name)

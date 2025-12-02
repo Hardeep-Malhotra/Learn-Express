@@ -1,0 +1,22 @@
+Express.js app.engine() Function
+
+The app.engine() function is used to register the given template engine callback as ext. By default the Express itself will require() the engine based on the file extension. 
+
+Syntax:
+
+app.engine(ext, callback)
+Parameters: The ext parameter is the extension type like ejs, hbs, etc and callback is the function passed as a parameter. 
+
+Return Value: It returns an Object. 
+
+Installation of the express module:
+
+You can visit the link to Install the express module. You can install this package by using this command.
+
+npm install express
+After installing the express module, you can check your express version in the command prompt using the command.
+
+npm version express
+After that, you can just create a folder and add a file, for example, index.js. To run this file you need to run the following command.
+
+node index.js

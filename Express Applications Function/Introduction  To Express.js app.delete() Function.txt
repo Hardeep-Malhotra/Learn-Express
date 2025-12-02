@@ -1,0 +1,11 @@
+Express app.delete() Function
+The `app.delete()` function is utilized to handle HTTP DELETE requests for a specified path. It takes the path as a parameter and also accepts callback functions as parameters to handle the request.
+
+Syntax: 
+
+app.delete(path, callback)
+Parameters: 
+
+path: It is the path for which the middleware function is being called.
+callback: It is a middleware function or a series/array of middleware functions. 
+app.delete() function is basically used to handle DELETE requests in Express.js.

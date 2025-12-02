@@ -1,0 +1,2 @@
+Express.js | app.param() Function
+The app.param() function is used to add the callback triggers to route parameters. It is commonly used to check for the existence of the data requested related to the route parameter. 

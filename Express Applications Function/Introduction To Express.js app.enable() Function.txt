@@ -1,0 +1,6 @@
+Express.js | app.enable() Function
+The app.enable() function is used to set the boolean value i.e. name to true. It is basically the shorthand for the app.set(name, true) or app.set(name, false). So instead we can use app.enable(name) function to set boolean values to some system Express.js settings.
+
+Syntax:
+
+app.enable(name)

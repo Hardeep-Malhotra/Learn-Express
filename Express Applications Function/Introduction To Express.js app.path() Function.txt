@@ -1,0 +1,3 @@
+Express.js | app.path() Function\
+
+The app.path() function returns the canonical path of the app as a string. When mounting advanced apps, the behavior of this approach can become extremely complicated. In most cases, it is better to use req.baseUrl to obtain the app's canonical path.

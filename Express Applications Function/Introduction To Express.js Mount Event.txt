@@ -1,0 +1,11 @@
+
+Express.js Mount Event
+
+he mount event is fired on a sub-app when it is mounted on a parent app and the parent app is basically passed to the callback function. 
+
+Syntax:
+
+app.on('mount', callback(parent))
+Parameter: It is an event named 'mount', and the callback function is called when this event is called. 
+
+Return Value: Since it's an event so it doesn't have any return value. 

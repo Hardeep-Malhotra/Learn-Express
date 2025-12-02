@@ -1,0 +1,6 @@
+Express.js | app.disable() Function
+The app.disable() function is used to set the boolean setting name to false. It is basically the shorthand for the app.set(name, false). So instead we can use app.disable(name) function to set the false boolean value to some system Express.js settings. 
+
+Syntax:
+
+app.disable(name)

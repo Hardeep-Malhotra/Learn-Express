@@ -1,0 +1,11 @@
+Express.js | app.all() Function
+
+The app.all() function is used to route all types of HTTP requests. Like if we have POST, GET, PUT, DELETE, etc, requests made to any specific route, let's say /user, so instead of defining different APIs like app.post('/user'), app.get('/user'), etc, we can define single API app.all('/user') which will accept all type of HTTP request. 
+
+Syntax:
+
+app.all( path, callback )
+Parameters:
+
+Path: It is the path for which the middleware function is called.
+Callback: It can be a middleware function or a series/array of functions.
