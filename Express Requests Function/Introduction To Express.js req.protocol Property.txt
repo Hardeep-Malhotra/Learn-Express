@@ -1,0 +1,9 @@
+Express.js req.protocol Property
+The req.protocol property contains the request protocol string which is either HTTP or (for TLS requests) https. When the trust proxy setting does not evaluate to false, this property will use the X-Forwarded-Proto header field value if it is present. 
+
+Syntax:
+
+req.protocol
+Parameter: No parameters. 
+
+Returns: String. 

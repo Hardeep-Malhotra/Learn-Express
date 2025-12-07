@@ -1,0 +1,9 @@
+Express.js req.route Propert
+The req.route property contains the currently-matched route which is a string. 
+
+Syntax:
+
+req.route
+Parameter: No parameters. 
+
+Return Value: Object 

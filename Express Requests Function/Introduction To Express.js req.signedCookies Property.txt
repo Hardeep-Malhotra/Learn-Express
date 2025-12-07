@@ -1,0 +1,28 @@
+Express.js req.signedCookies Property
+The req.signedCookies property contains signed cookies sent by the request, unsigned, and ready for use when using cookie-parser middleware. 
+
+Syntax:
+
+req.signedCookies
+Parameter: No parameter 
+
+Return Value: Object 
+
+
+🍪 What are Signed Cookies?
+- Normally, cookies are just plain text values stored in the browser and sent back to the server.
+- A signed cookie is a cookie that has been cryptographically signed using a secret key.
+- This prevents tampering: if someone changes the cookie value in the browser, the signature won’t match and Express will reject it.
+
+🔎 req.signedCookies Property
+- When you use the cookie-parser middleware with a secret key, Express automatically verifies signed cookies.
+- req.signedCookies contains all the cookies that were signed and successfully verified.
+- These cookies are returned as a plain JavaScript object, ready to use.
+👉 Syntax:
+req.signedCookies
+
+
+- Parameters: none
+- Return Value: an object containing key-value pairs of signed cookies.
+
+

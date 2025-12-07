@@ -1,0 +1,33 @@
+Express.js req.stale Property
+
+The req.stale property indicates whether the incoming request is stale, and this property is the opposite of req.fresh property. 
+
+Syntax:
+
+req.stale
+Parameter: No parameters. 
+
+Return Value: True or False. 
+
+
+📌 Express.js req.stale Summary
+- Definition:
+req.stale is a boolean property in Express.js that indicates whether the incoming request is stale.
+- Relation to req.fresh:
+It is the opposite of req.fresh.
+- If req.fresh is true, the client’s cache is valid.
+- If req.stale is true, the client’s cache is outdated.
+- Syntax:
+req.stale
+- No parameters.
+- Returns true or false.
+- How it works:
+- Express checks HTTP caching headers like If-None-Match and If-Modified-Since.
+- Based on these headers, it decides whether the client’s cached resource is fresh or stale.
+- Return Value:
+- true → The request is stale (server should send new data).
+- false → The request is fresh (client can use cached data).
+- Use Case:
+Helps optimize performance by avoiding unnecessary data transfer. If the request is fresh, you can skip sending the full response.
+
+

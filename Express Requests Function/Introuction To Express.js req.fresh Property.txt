@@ -1,0 +1,9 @@
+ Property
+The req.fresh property returns true if the response is still 'fresh' in the client’s cache else it will return false. 
+
+Syntax:
+
+req.fresh
+Parameter: No parameter 
+
+Return Value: True or False 

@@ -1,0 +1,9 @@
+Express.js req.acceptsLanguages()
+The req.acceptsLanguages() function returns the first accepted language of the specified language on the basis of the request that Accept-Language HTTP header field and it returns false if none of the specified languages is accepted. 
+
+Syntax:
+
+req.acceptsLanguages(lang [, ...])
+Parameters: The lang parameter is the language code like 'en-US', etc. 
+
+Return Value: String (if true) or False. 

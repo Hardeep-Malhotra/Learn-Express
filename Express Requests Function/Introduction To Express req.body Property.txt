@@ -1,0 +1,12 @@
+Express req.body Property
+
+The req.body property contains key-value pairs of data submitted in the request body. By default, it is undefined and is populated when you use a middleware called body-parsing such as express.urlencoded() or express.json(). 
+
+Syntax:
+
+req.body
+Parameter: No parameters. 
+
+Return Value: Object 
+
+The req.body property is used to access the data sent by the client in POST requests.

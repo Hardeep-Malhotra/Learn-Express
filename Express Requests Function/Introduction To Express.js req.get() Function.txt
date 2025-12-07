@@ -1,0 +1,10 @@
+Express.js req.get() Function
+
+The req.get() function returns the specified HTTP request header field which is a case-insensitive match and the Referrer and Referrer fields are interchangeable. 
+
+Syntax:
+
+req.get( field )
+Parameter: The field parameter specifies the HTTP request header field. 
+
+Return Value: String. 

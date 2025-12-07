@@ -1,0 +1,7 @@
+- req.subdomains ek array return karta hai jo request ke hostname ke subdomains dikhata hai.
+- Agar tum http://localhost:3000/ use karte ho → subdomains empty array [] milega (kyunki localhost ka koi subdomain nahi hota).
+- Agar tum http://api.example.com/ use karte ho → req.subdomains hoga ['api'].
+- Agar tum http://shop.us.example.com/ use karte ho → ['shop', 'us'].
+- Matlab: localhost par kuch nahi dikhega, subdomains test karne ke liye custom domain ya hosts file entry use karni padegi.
+
+

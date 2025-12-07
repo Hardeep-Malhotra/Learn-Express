@@ -1,0 +1,9 @@
+Express.js req.method Property
+The req.method property contains a string corresponding to the HTTP method of the request which can be either GET, POST, PUT, DELETE, etc. 
+
+Syntax:
+
+req.method
+Parameter: No parameters. 
+
+Return Value: String 

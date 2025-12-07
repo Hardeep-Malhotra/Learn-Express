@@ -1,0 +1,8 @@
+Express req.query Property
+
+The req.query property in Express allows you to access the query parameters from the URL of an incoming HTTP request. Query parameters are typically key-value pairs that are appended to the URL after the "?" symbol, and they are separated by the "&" symbol.
+
+Syntax:
+
+req.query
+Parameter: req.query does not require any parameters. It automatically parses and returns an object containing the query parameters from the URL.

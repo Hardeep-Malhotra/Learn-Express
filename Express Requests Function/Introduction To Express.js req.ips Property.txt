@@ -1,0 +1,9 @@
+Express.js req.ips Property
+The req.ips property contains an array of IP addresses specified in the X-Forwarded-For request header. It returns an array of IP addresses. 
+
+Syntax:
+
+req.ips
+Parameter: No parameter. 
+
+Return Value: Array

@@ -1,0 +1,9 @@
+Express.js req.app Property
+The req.app property holds the reference to the instance of the Express application that is using the middleware. 
+
+Syntax:
+
+req.app
+Parameter: No parameters. 
+
+Return Value: Object  

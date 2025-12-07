@@ -1,0 +1,10 @@
+Express.js req.accepts() Function
+
+The req.accepts() function checks if the specified content types are acceptable on the basis of the requests Accept HTTP header field. The method returns the best match, else it returns false if none of the specified content types is acceptable. 
+
+Syntax:
+
+req.accepts( types )
+Parameter: The type value is a single MIME type string. 
+
+Return Value: String 

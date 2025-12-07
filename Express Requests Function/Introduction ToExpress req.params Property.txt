@@ -1,0 +1,11 @@
+Express.js req.subdomains Property
+
+The req.subdomains property contains an array of subdomains in the domain name of the request. The application property subdomain offset, which defaults to 2 determines the beginning of the subdomain segments.
+
+Syntax: 
+
+req.subdomains
+Parameter: No parameters.
+
+Returns: Array
+

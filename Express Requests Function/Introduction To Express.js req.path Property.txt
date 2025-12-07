@@ -1,0 +1,9 @@
+Express.js req.path Property
+The req.path property contains the path of the request URL. This property is widely used to get the path part of the incoming request URL. 
+
+Syntax:
+
+req.path
+Parameter: No parameters. 
+
+Return Value: String 

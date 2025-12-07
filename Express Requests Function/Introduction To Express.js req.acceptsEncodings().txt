@@ -1,0 +1,9 @@
+Express.js req.acceptsEncodings()
+The req.acceptsEncodings() function returns the first accepted encoding of the specified encodings on the basis of the request Accept-Encoding HTTP header field and it returns false if none of the specified encodings is accepted. 
+
+Syntax:
+
+req.acceptsEncodings(encoding [, ...])
+Parameters: The encoding parameter is the specified encoding like 'compress', etc. 
+
+Return Value: String (if true) or False.

@@ -1,0 +1,9 @@
+Express.js req.originalUrl Property
+The req.originalUrl property is much like req.url however, it returns the original request URL thereby allowing you to rewrite req.url freely for internal routing purposes. 
+
+Syntax:
+
+req.originalUrl
+Parameter: No parameters. 
+
+Return Value: String 

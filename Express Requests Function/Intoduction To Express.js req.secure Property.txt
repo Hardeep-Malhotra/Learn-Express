@@ -1,0 +1,28 @@
+Express.js req.secure Property
+The req.secure property is a Boolean property that is true if a TLS connection is established else returns false. 
+
+Syntax:
+
+req.secure
+Return Value: It returns a Boolean value either True or False. 
+
+🌐 What is TLS (often confused as “TLC”)?
+ Actually the correct term is TLS (Transport Layer Security).
+- TLS is the cryptographic protocol that secures communication over the internet.
+- It’s the successor to SSL (Secure Sockets Layer).
+- When you use HTTPS (https://), your browser and server communicate using TLS.
+- TLS provides:
+- Encryption → data is scrambled so attackers can’t read it.
+- Authentication → ensures you’re talking to the real server (via certificates).
+- Integrity → prevents data from being modified in transit.
+
+🔎 How req.secure works with TLS
+- If your Express app is running directly with HTTPS (using https.createServer), req.secure will be true.
+- If your app is behind a proxy (like Nginx or Heroku), you must enable:
+app.enable('trust proxy');
+
+
+- so Express trusts the proxy’s X-Forwarded-Proto header. Then req.secure will correctly reflect whether the original client used HTTPS.
+✅ Summary- req.secure → tells you if the request is HTTPS.
+- TLS → the protocol that makes HTTPS secure (encryption + authentication).
+- Without TLS, data travels in plain text (HTTP), which is insecure.

@@ -1,0 +1,8 @@
+Express JS req.hostname Property
+In the world of web development the use of Node.Js, Express.Js stands out as a strong and popular framework for building internet packages and APIs. Within Express.Js, the req.hostname property serves as a beneficial tool for retrieving the hostname distinctive in the HTTP request made to the server. These belongings give insights into the domain name used to access the server, providing builders with essential information about incoming requests
+
+Prerequisites
+Node JS
+Express JS
+HTTP protocol
+The req.hostname property contains the hostname which is derived from the Host HTTP header. It basically returns the hostname which is being supplied in the host HTTP header.

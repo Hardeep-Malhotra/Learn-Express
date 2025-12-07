@@ -1,0 +1,9 @@
+Express.js req.ip Property
+The req.ip property contains the remote IP address of the request. It is useful when the user wants the IP address of the incoming request made to the application. 
+
+Syntax:
+
+req.ip
+Parameter: No parameter. 
+
+Return Value: String 
