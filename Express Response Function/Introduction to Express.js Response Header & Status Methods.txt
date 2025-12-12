@@ -1,0 +1,129 @@
+=================================================================
+🟦 1. res.sendStatus(statusCode)
+=================================================================
+📌 Definition:
+
+The res.sendStatus() function sets the HTTP status code and sends its string representation as the response body.
+
+Example:
+res.sendStatus(404) → sends:
+
+Status code: 404
+
+Body: "Not Found"
+
+✔ Syntax
+res.sendStatus(statusCode);
+
+✔ Example
+app.get("/not-found", (req, res) => {
+    res.sendStatus(404); // Sends: "Not Found"
+});
+
+=================================================================
+🟦 2. res.set(field, value)
+=================================================================
+📌 Definition:
+
+The res.set() function sets one or more HTTP response headers.
+
+✔ Syntax
+res.set("Header-Name", "value");
+
+
+Set multiple headers:
+
+res.set({
+    "Header1": "value1",
+    "Header2": "value2"
+});
+
+✔ Example
+app.get("/header", (req, res) => {
+    res.set("X-Powered-By", "HardeepEngine");
+    res.send("Header set!");
+});
+
+
+Multiple headers:
+
+res.set({
+    "X-App": "Express",
+    "X-Version": "1.0"
+});
+
+=================================================================
+🟦 3. res.status(statusCode)
+=================================================================
+📌 Definition:
+
+The res.status() function sets the HTTP status code for the response.
+It does not send the response by itself.
+
+👉 It is chainable.
+
+✔ Syntax
+res.status(201).send("Created");
+
+✔ Example
+app.get("/created", (req, res) => {
+    res.status(201).send("Resource created!");
+});
+
+=================================================================
+🟦 4. res.type(type)
+=================================================================
+📌 Definition:
+
+The res.type() function sets the Content-Type header based on the given MIME type.
+Express automatically resolves the correct MIME type for you.
+
+Examples:
+
+"json" → application/json
+
+"html" → text/html
+
+"txt" → text/plain
+
+✔ Syntax
+res.type("json");
+res.type("html");
+res.type("png");
+
+✔ Example
+app.get("/json", (req, res) => {
+    res.type("json");
+    res.send({ message: "Hello JSON" });
+});
+
+app.get("/html", (req, res) => {
+    res.type("html");
+    res.send("<h1>Hello HTML</h1>");
+});
+
+=================================================================
+🟦 5. res.vary(field)
+=================================================================
+📌 Definition:
+
+The res.vary() function adds the given field to the Vary response header.
+The Vary header tells the client that the server’s response may change depending on a specific request header.
+
+Example:
+Vary: Accept-Encoding
+Meaning: The response varies based on the "Accept-Encoding" header.
+
+✔ Syntax
+res.vary("User-Agent");
+
+✔ Example
+app.get("/vary", (req, res) => {
+    res.vary("User-Agent");
+    res.send("Vary header added!");
+});
+
+
+Response header output:
+
+Vary: User-Agent

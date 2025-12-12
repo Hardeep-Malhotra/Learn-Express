@@ -1,0 +1,26 @@
+Express.js res.redirect() Function
+
+In Express.js, the res.redirect() function is one of the most commonly used methods to handle redirection in a web application. This method is part of the response object (res), and it allows you to send an HTTP redirect to the client, telling it to navigate to a different URL.
+
+What is Redirection?
+In web development, redirection refers to the process of sending the user from one URL to another. This can happen for several reasons:
+
+A page has moved to a new URL.
+After a form submission, you want to send the user to another page.
+
+app.get('/example', (req, res) => {
+    res.redirect('https://www.example.com/');
+});
+Syntax
+
+res.redirect([status] path)
+Parameter: This function accepts two parameters as mentioned above and described below:
+
+status: This parameter holds the HTTP status code
+path: This parameter describes the path.
+Return Value: It returns an Object.
+
+Type of Paths We Can Enter
+Absolute URL: You can specify a full global URL (e.g., https://www.geeksforgeeks.org/).
+Relative Path: The path can be relative to the root of the hostname (e.g., /user), so it will redirect from http://hostname/user/cart to http://hostname/user.
+Relative to the Current URL: You can also provide a relative path to the current URL (e.g., /addtocart), redirecting from http://hostname/user/ to http://hostname/user/addtocart.

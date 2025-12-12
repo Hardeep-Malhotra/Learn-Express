@@ -1,0 +1,9 @@
+Express.js res.location() Function
+The res.location() function is used to set the response Location HTTP header to the path parameter which is being specified. Basically, it is used to set the response header. It doesn't end the response, after using it you can write a response body if you want to write.
+
+Syntax:
+
+res.location( path )
+Parameter:
+
+path: It refers to the URL which is specified in the Referrer header of the request.

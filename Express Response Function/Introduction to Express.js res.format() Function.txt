@@ -1,0 +1,6 @@
+Express.js | res.format() Function
+The res.format() function performs content negotiation on the Accept HTTP header on the request object if it is present. This function checks the Accept HTTP request header and then invokes the corresponding handler depending on the Accept value. 
+
+Syntax:
+
+res.format(object)

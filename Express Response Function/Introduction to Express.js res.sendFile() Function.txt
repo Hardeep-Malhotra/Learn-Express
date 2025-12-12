@@ -1,0 +1,20 @@
+Express.js res.sendFile() Function
+The res.sendFile() function in Express.js is a convenient method for sending static files (like HTML, PDFs, images, or other media) directly to the client. It transfers the file at the given path and it sets the Content-Type response HTTP header field based on the filename extension. 
+
+Syntax
+
+res.sendFile(path [, options] [, fn])
+Parameter
+
+path: The absolute or relative path to the file you want to send.
+options: (Optional) An object where you can configure settings such as headers or caching.
+fn: (Optional) A callback function that handles errors, typically invoked with an error object if the file cannot be sent.
+Returns: It returns an Object.
+
+
+
+
+Use Cases for res.sendFile()
+Serving Static Files: res.sendFile() is ideal for serving static files such as HTML, CSS, JavaScript, and media files like images or videos directly from your server to the client.
+File Downloads: You can use this method to allow users to download files. For example, serving PDF reports, downloadable documentation, or software packages.
+Serving Templates: If you are serving HTML templates (e.g., EJS files) directly to the client, you can use res.sendFile() for static content like static HTML pages or as a fallback when templates are not rendered dynamically.

@@ -1,0 +1,9 @@
+Express.js res.attachment() Function
+The res.attachment() function is used to set the HTTP response Content-Disposition header field to 'attachment'. If the name of the file is given as a filename, then it sets the Content-Type based on the extension name through the res.type() function and finally sets the Content-Disposition 'filename = ' parameter.
+
+Syntax: 
+
+res.attachment( [filename] )
+Parameter: The filename parameter describes the name of the file.
+
+Return Value: It returns an Object.

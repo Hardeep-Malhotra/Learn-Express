@@ -1,0 +1,10 @@
+Express.js res.headersSent Property
+
+The res.headersSent property is a boolean property that indicates if the app sent HTTP headers for the response. 
+
+Syntax:
+
+res.headersSent
+Parameter: No parameters. 
+
+Return Value: This property returns a Boolean value either True or False. 

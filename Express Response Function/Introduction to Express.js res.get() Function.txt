@@ -1,0 +1,9 @@
+Express.js res.get() Function
+The res.get() function returns the HTTP response header specified by the field. The match is case-insensitive.
+
+Syntax: 
+
+res.get( field )
+Parameter: The field parameter describes the name of the field.
+
+Return Value: It returns an Object.

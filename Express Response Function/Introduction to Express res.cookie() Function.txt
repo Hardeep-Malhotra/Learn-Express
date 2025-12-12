@@ -1,0 +1,10 @@
+Express res.cookie() Function
+The res.cookie() function is used to set a cookie in the client's browser. It allows you to assign a cookie by providing a name and a value. The value can be a simple string or an object, which will be automatically converted to JSON.
+
+Syntax:
+
+res.cookie(name, value [, options])
+name: The name of the cookie.
+value: The value of the cookie. It can be a string or an object that is converted to JSON.
+options (Optional): An object that can contain properties like expires, domain, path, secure, etc. These help control the behavior of the cookie. 
+Return Value: It returns an Object. 

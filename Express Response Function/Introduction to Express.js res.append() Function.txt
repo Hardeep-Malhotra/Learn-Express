@@ -1,0 +1,9 @@
+Express.js res.append() Function
+The res.append() function appends the specified value to the HTTP response header field and if the header is not already set then it creates the header with the specified value. 
+
+Syntax: 
+
+res.append(field [, value])
+Parameter: The field parameter describes the name of the field that need to be appended and the value parameter can be a string or an array.
+
+Returns: It returns an Object.

@@ -1,0 +1,9 @@
+Express.js res.download() Function
+The res.download() function transfers the file at the path as an 'attachment'. Typically, browsers will prompt the user to download.
+
+Syntax:
+
+res.download(path [, filename] [, options] [, fn])
+Parameters: The filename is the name of the file which is to be downloaded as an attachment and fn is a callback function. 
+
+Return Value: It does not return anything. 

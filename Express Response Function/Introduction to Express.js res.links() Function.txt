@@ -1,0 +1,9 @@
+Express.js res.links() Function
+The res.links() function is used to join the links provided as properties of the parameter to populate the response’s Link HTTP header field.
+
+Syntax: 
+
+res.links( links )
+Parameter: The link parameter describes the name of the link to be joined.
+
+Return Value: It returns an Object.

@@ -1,0 +1,9 @@
+Express res.locals Property
+The `res.locals` property is an object that holds response local variables specific to the current request. It has a scope limited to the request and is accessible only to the view(s) rendered during that particular request/response cycle, if any. 
+
+Syntax:
+
+res.locals
+Parameter: No parameters. 
+
+Return Value: Object 
