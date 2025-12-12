@@ -1,0 +1,9 @@
+Express.js router.all() Function
+The router.all() function is just like the router.METHOD() methods, except that it matches all HTTP methods (verbs). It is very helpful for mapping global logic for arbitrary matches or specific path prefixes. 
+
+Syntax:
+
+router.all(path, [callback, ...] callback)
+Parameter: The path parameter is the path of the specified URL and the callback is the function passed as a parameter. 
+
+Return Value: It returns responses. 

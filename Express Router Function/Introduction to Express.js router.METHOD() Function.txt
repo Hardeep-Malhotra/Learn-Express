@@ -1,0 +1,9 @@
+Express.js router.METHOD() Function
+The router.METHOD() method provides the routing functionality in Express, where METHOD is one of the HTTP methods, such as GET, PUT, POST, and so on, in lowercase. 
+
+Syntax:
+
+router.METHOD(path, [callback, ...] callback)
+Parameter: The path parameter specifies the path on the URL and callback is the function that is executed when this path is called.
+
+Return Value: Since, it provides the routing functionality, so it can return responses. 

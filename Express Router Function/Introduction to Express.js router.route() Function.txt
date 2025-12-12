@@ -1,0 +1,9 @@
+Express.js router.route() Function
+The router.route() function returns an instance of a single route that you can then use to handle HTTP verbs with optional middleware. You can also use the router.route() function to avoid duplicate route naming as well as typing errors. 
+
+Syntax:
+
+router.route( path )
+Parameter: The path parameter holds the path of the specified URL. 
+
+Return Value: It returns responses. 

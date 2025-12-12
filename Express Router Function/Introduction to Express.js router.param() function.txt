@@ -1,0 +1,13 @@
+Express.js router.param() function
+The parameters of router.param() are a name and function. Where the name is the actual name of the parameter and the function is the callback function. Basically, the router.param() function triggers the callback function whenever the user routes to the parameter. This callback function will be called only a single time in the request-response cycle, even if the user routes to the parameter multiple times.
+
+Syntax:
+
+router.param(name, function)
+The parameters of the callback function are: 
+
+req: the request object
+res: the response object
+next: the next middleware function
+id: the value of the name parameter
+The router.param() function is used for pre-processing route parameters in Express.js.

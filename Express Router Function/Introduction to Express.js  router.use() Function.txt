@@ -1,0 +1,10 @@
+Express.js | router.use() Function
+The router.use() function uses the specified middleware function or functions. It basically mounts middleware for the routes which are being served by the specific router. 
+
+Syntax:
+
+router.use( path, function )
+Parameters:
+
+Path: It is the path to this middleware, if we can have /user, now this middleware is called for all API's having /user of this router.
+function: This function is passed as a callback, it is called when the specified path is called in this router.
