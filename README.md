@@ -4,7 +4,7 @@ A comprehensive, example-driven repository that documents and demonstrate's **al
 
 This repository acts as a **hands-on reference book** to understand how Express works internally — beyond building CRUD apps.
 
-💡 **Learn Express by running and reading real examples — function by function.**
+💡 **Learn Express by running and reading real example's — function by function.**
 
 ---
 
