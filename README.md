@@ -1,6 +1,6 @@
 # 🚀 Learn-Express — Complete Express.js Practical Reference
 
-A comprehensive, example-driven repository that documents and demonstrates **almost every core method, property, middleware, router utility, request & response helper provided by Express.js**.
+A comprehensive, example-driven repository that documents and demonstrate's **almost every core method, property, middleware, router utility, request & response helper provided by Express.js**.
 
 This repository acts as a **hands-on reference book** to understand how Express works internally — beyond building CRUD apps.
 
